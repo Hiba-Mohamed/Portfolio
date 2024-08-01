@@ -1,24 +1,18 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { TfiClose } from "react-icons/tfi";
 
 export function Heading() {
   const [open, setOpen] = useState(false);
   return (
     <nav className="border-slate-50 bg-white font-OpenSans">
       <div className="max-w-2xl flex flex-wrap items-center justify-between mx-auto px-4 max-w-7xl">
-        <Link to="/introPage" className="flex items-center">
-          <img
-            src="images/NAS-logo.png"
-            className="sm:h-10 mr-3 h-6"
-            alt="Nurses Assignment Sheet logo"
-          />
-        </Link>
-
         <div id="navbar-hamburger">
           <ul className="hidden text-sm md:flex flex gap-6 flex-row items-center font-medium rounded-lg">
             <li>
               <Link
-                to="/introPage"
+                to="/"
                 className="block font-bold text-gray-900 hover:text-sky-700 py-4 hover:pb-3 px-4 hover:bg-sky-100  hover: hover:border-b-4 hover:border-sky-600"
                 onClick={() => setOpen(!open)}
               >
@@ -28,30 +22,29 @@ export function Heading() {
 
             <li>
               <Link
-                to="/about"
+                to="/projects"
                 className="block font-bold text-gray-900 hover:text-sky-700 py-4 hover:pb-3 px-4 hover:bg-sky-100  hover: hover:border-b-4 hover:border-sky-600"
                 onClick={() => setOpen(!open)}
               >
-                About NAS
+                Projects
               </Link>
             </li>
 
             <li>
-              <Link
-                to="/hospitalView"
-                className="block font-bold text-gray-900 hover:text-sky-700 py-4 hover:pb-3 px-4 hover:bg-sky-100  hover: hover:border-b-4 hover:border-sky-600"
+              <a
+                href="http://github.com/Hiba-Mohamed"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block font-bold py-2 pl-3 pr-4 text-gray-900 rounded hover:text-sky-600"
                 onClick={() => setOpen(!open)}
               >
-                Hospital Units{" "}
-              </Link>
+                {" "}
+                GitHub
+              </a>
             </li>
           </ul>
         </div>
-        <div className="flex flex-row items-center gap-4 hidden md:flex">
-          <Link to="/">
-            <img className="h-8 md:h-10" src="images/profile-icon.png"></img>
-          </Link>
-        </div>
+        <div className="flex flex-row items-center gap-4 hidden md:flex"></div>
         <button
           onClick={() => setOpen(!open)}
           data-collapse-toggle="navbar-hamburger"
@@ -60,22 +53,7 @@ export function Heading() {
           aria-controls="navbar-hamburger"
           aria-expanded="false"
         >
-          <span className="sr-only">Open main menu</span>
-          <svg
-            className="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
+          {open ? <TfiClose /> : <RxHamburgerMenu />}
         </button>
         <div
           className={`${open ? "block" : "hidden"} w-full`}
@@ -84,7 +62,7 @@ export function Heading() {
           <ul className="md:hidden flex flex-col items-center font-medium my-4 rounded-lg">
             <li>
               <Link
-                to="/introPage"
+                to="/"
                 className="block font-bold py-2 pl-3 pr-4 text-gray-900 rounded hover:text-sky-600"
                 aria-current="page"
                 onClick={() => setOpen(!open)}
@@ -94,22 +72,25 @@ export function Heading() {
             </li>
             <li>
               <Link
-                to="/hospitalView"
+                to="/projects"
                 className="block font-bold py-2 pl-3 pr-4 text-gray-900 rounded hover:text-sky-600"
                 onClick={() => setOpen(!open)}
               >
-                Hospital Units{" "}
+                Projects
               </Link>
             </li>
 
             <li>
-              <Link
-                to="/about"
+              <a
+                href="http://github.com/Hiba-Mohamed"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block font-bold py-2 pl-3 pr-4 text-gray-900 rounded hover:text-sky-600"
                 onClick={() => setOpen(!open)}
               >
-                About NAS
-              </Link>
+                {" "}
+                GitHub
+              </a>
             </li>
           </ul>
         </div>
