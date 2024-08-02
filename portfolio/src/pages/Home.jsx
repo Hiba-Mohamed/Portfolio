@@ -4,8 +4,8 @@ import React from "react";
 const Home = () => {
   return (
     <>
-      <div className="bg-pattern ">
-        <div className="min-h-screen items-center bg-violet-50 font-OpenSans flex flex-col max-w-xl sm:max-w-full px-2">
+      <div className="bg-pattern min-h-screen items-centerfont-OpenSans flex flex-col items-center max-w-xl sm:max-w-full px-2">
+        <div className="min-h-screen items-center bg-violet-50 font-OpenSans flex flex-col max-w-xs md:max-w-xl  lg:max-w-6xl shadow-2xl px-2">
           <h1 className="p-6 font-bold text-2xl md:p-12 md:text-5xl ">
             Welcome to Hiba's Portfolio
           </h1>
