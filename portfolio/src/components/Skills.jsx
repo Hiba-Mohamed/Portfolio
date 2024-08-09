@@ -2,7 +2,7 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <div className=" flex flex-col relative min-h-screen w-full bg-gray-800 text-slate-50 gap-10">
+    <div className=" flex flex-col relative w-full bg-gray-800 text-slate-50 gap-10 pb-40 sm:pb-56">
       <div className="flex flex-row gap-20  sm:gap-64 px-10 sm:px-20 pt-24 sm:pt-0">
         <h2 className="text-3xl font-bold sm:text-5xl">My Skills</h2>
         <p className="text-3xl font-bold text-gray-700 sm:text-5xl  ">

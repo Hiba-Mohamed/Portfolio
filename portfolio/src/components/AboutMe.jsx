@@ -1,5 +1,4 @@
 import React from "react";
-import { FaCoffee, FaApple } from "react-icons/fa"; // Example icons
 
 const AboutMe = () => {
   return (
