@@ -4,9 +4,12 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'pattern': "url('background-pic.png')",
+        banner: "url('omer-yildiz-U7rwm4WmIPA-unsplash.jpg')",
+      },
+      colors: {
+        navy: "#08263C",
       },
     },
+    plugins: [],
   },
-  plugins: [],
 };
