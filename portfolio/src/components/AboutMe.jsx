@@ -12,12 +12,12 @@ const AboutMe = () => {
         <div className="flex flex-col gap-56 sm:gap-96   ">
           <div className="flex flex-row justify-end sm:flex-col">
             {" "}
-            <img className="w-20 h-20 opacity-15" src="/cloudIcon.png" alt="" />
+            <img className="w-20 h-20 lg:w-32 lg:h-32 opacity-15" src="/cloudIcon.png" alt="" />
           </div>
           <div>
             {" "}
             <img
-              className="w-20 h-20 opacity-15"
+              className="w-20 h-20 lg:w-32 lg:h-32 opacity-15"
               src="/computerIcon.png"
               alt=""
             />
@@ -27,14 +27,14 @@ const AboutMe = () => {
           <div className="flex flex-row justify-end ">
             {" "}
             <img
-              className="w-20 h-20 opacity-15 "
+              className="w-20 h-20 lg:w-32 lg:h-32 opacity-15 "
               src="/pillcIcon.png"
               alt=""
             />
           </div>
           <div>
             {" "}
-            <img className="w-20 h-20 opacity-15" src="/dnaIcon.png" alt="" />
+            <img className="w-20 h-20 lg:w-32 lg:h-32 opacity-15" src="/dnaIcon.png" alt="" />
           </div>
         </div>
       </div>
