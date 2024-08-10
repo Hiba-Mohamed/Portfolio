@@ -3,6 +3,7 @@ import Banner from "../components/Banner";
 import AboutMe from "../components/AboutMe";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
+import TechMedQuiz from "../components/TechMedQuiz";
 const Home = () => {
   return (
     <>
@@ -11,6 +12,7 @@ const Home = () => {
         <AboutMe />
         <Skills />
         <Projects />
+        <TechMedQuiz />
       </div>
     </>
   );
