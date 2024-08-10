@@ -2,7 +2,7 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div className="bg-gray-800 flex flex-col w-full text-gray-50 sm:py-24">
+    <div className="bg-gray-800 flex flex-col w-full text-gray-50 sm:py-24" id="projects">
       <h2 className="text-3xl px-10 sm:text-4xl lg:text-5xl font-bold">Featured Projects</h2>
       <h3 className="px-10 pt-5">Click on the project for live pages</h3>
       <div className="flex flex-col lg:flex-row lg:justify-center items-center py-12">
