@@ -135,16 +135,14 @@ const TechMedQuiz = () => {
             </h3>
             <div className="flex flex-col gap-4">
               {questions[currentQuestionIndex].answers.map((answer) => (
-                <div className="flex flex-row px-4 bg bg-gray-600 py-2 mx-4 rounded-md items-center">
+                <div
+                  onClick={() => {
+                    chosenAnswer(answer);
+                  }}
+                  className="flex flex-row px-4 bg cursor-pointer bg-gray-600 py-2 mx-4 rounded-md items-center"
+                >
                   {answer === userAnswer ? <FaRegDotCircle /> : <FaRegCircle />}
-                  <p
-                    onClick={() => {
-                      chosenAnswer(answer);
-                    }}
-                    className="px-4"
-                  >
-                    {answer}
-                  </p>
+                  <p className="px-4">{answer}</p>
                 </div>
               ))}
             </div>
