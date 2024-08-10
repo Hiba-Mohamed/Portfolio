@@ -7,7 +7,7 @@ const AboutMe = () => {
       <div className="absolute inset-0 bg-cover bg-center bg-gray-800"></div>
 
       {/* Icons */}
-      <div className="absolute inset-0 flex flex-col sm:flex-row gap-56 sm:gap-72 sm:pr-20 sm:pb-96 lg:gap-104 lg:pb-56 items-end justify-center sm:justify-end space-x-4">
+      <div className="absolute inset-0 flex flex-col sm:flex-row gap-56 sm:gap-72 sm:pr-20 sm:pb-96 lg:gap-152 lg:pb-56 items-end sm:items-start justify-center sm:justify-end space-x-4">
         <div className="flex flex-col gap-56 sm:gap-96   ">
           <div className="flex flex-row justify-end sm:flex-col">
             {" "}
