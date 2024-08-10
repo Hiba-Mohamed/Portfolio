@@ -95,6 +95,14 @@ const TechMedQuiz = () => {
     }
   };
 
+  const handleTakeAgain = () => {
+    setCurrentQuestionIndex(0);
+    setUserScore(0);
+    setUserAnswer("");
+    setIsCorrect("unanswered");
+    setIsSubmitted(false);
+  };
+
   return (
     <>
       <div className="flex flex-col items-center relative w-full bg-gray-800 text-slate-50 gap-10 pb-40 sm:pb-56">
@@ -108,7 +116,10 @@ const TechMedQuiz = () => {
               <h1 className="text-3xl">All Done !!</h1>
             </div>
             <p className="text-2xl">Your Score is {userScore}/4</p>
-            <button className="my-6 bg-gray-900 py-2 w-60 rounded-md shadow-lg-custom">
+            <button
+              onClick={handleTakeAgain}
+              className="my-6 bg-gray-900 py-2 w-60 rounded-md shadow-lg-custom"
+            >
               Try Again
             </button>
           </div>
