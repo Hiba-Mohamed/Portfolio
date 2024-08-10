@@ -3,12 +3,10 @@ import React from "react";
 const AboutMe = () => {
   return (
     <div className="relative min-h-screen w-full bg-gray-800 text-white">
-      {/* Background Image */}
       <div className="absolute inset-0 bg-cover bg-center bg-gray-800"></div>
 
-      {/* Icons */}
       <div className="absolute inset-0 flex flex-col sm:flex-row gap-56 sm:gap-72 sm:pr-20 sm:pb-96 lg:gap-152 lg:pb-56 items-end sm:items-start justify-center sm:justify-end space-x-4">
-        <div className="flex flex-col gap-56 sm:gap-96   ">
+        <div className="flex flex-col gap-32 sm:gap-96  pt-12 md:pt-0 ">
           <div className="flex flex-row justify-end sm:flex-col">
             {" "}
             <img className="w-20 h-20 lg:w-32 lg:h-32 opacity-15" src="/cloudIcon.png" alt="" />
@@ -22,7 +20,7 @@ const AboutMe = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col gap-56 sm:gap-96  ">
+        <div className="flex flex-col gap-32 sm:gap-96  ">
           <div className="flex flex-row justify-end ">
             {" "}
             <img

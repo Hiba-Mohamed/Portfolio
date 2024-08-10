@@ -7,7 +7,7 @@ import TechMedQuiz from "../components/TechMedQuiz";
 const Home = () => {
   return (
     <>
-      <div className="min-h-screen items-centerfont-OpenSans flex flex-col items-center max-w-xl sm:max-w-full">
+      <div className="min-h-screen items-centerfont-OpenSans flex flex-col items-center ">
         <Banner />
         <AboutMe />
         <Skills />
