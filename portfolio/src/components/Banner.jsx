@@ -7,10 +7,10 @@ const Banner = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-navy/100 to-gray-50/60 sm:to-gray-50/60"></div>
       <div className="relative z-10 flex flex-col justify-center  h-full text-center text-white space-y-4">
         <div className="md:pb-24 sm:w-152">
-          <h1 className="text-5xl font-bold text-start px-8 md:text-7xl ">
+          <h1 className="text-3xl font-bold text-start px-8 md:text-5xl ">
             Welcome to Hiba’s Portfolio
           </h1>
-          <h2 className="text-3xl  pt-10 text-start px-8 md:text-5xl">
+          <h2 className="text-2xl  pt-10 text-start px-8 md:text-4xl">
             Bridging Healthcare and Technology
           </h2>
         </div>

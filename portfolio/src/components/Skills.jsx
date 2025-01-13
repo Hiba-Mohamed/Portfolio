@@ -12,19 +12,19 @@ const Skills = () => {
       <div>
         <ul className="flex flex-col px-10 sm:px-20 text-lg gap-5 sm:text-2xl sm:gap-10">
           <li>
-            <strong>Languages: <br/></strong> JavaScript, TypeScript, ejs, Python
+            <strong>Languages: <br/></strong> JavaScript, TypeScript, ejs, Python, Java
           </li>
           <li>
             <strong>Web Development:<br/> </strong> HTML, CSS, React, Node.js
           </li>
           <li>
-            <strong>Database Management:<br/></strong> MongoDB
+            <strong>Database Management:<br/></strong> MongoDB, SQL
           </li>
           <li>
-            <strong>Tools: </strong><br/>Git, Figma, Canva, GitHub
+            <strong>Tools: </strong><br/>Git, Figma, Canva, GitHub, AI 
           </li>
           <li>
-            <strong>Cloud Computing: <br/> </strong>AWS Cloud Practitioner Course
+            <strong>Cloud Computing: <br/> </strong>AWS Cloud Practitioner Course, AWS Cloud Development course
           </li>
         </ul>
       </div>
